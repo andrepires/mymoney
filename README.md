@@ -1,5 +1,5 @@
 # mymoney
-Sample SPA Application using AngularJS and many key software development concepts
+My Money Sample SPA Application using AngularJS, OrigoDB, EF and many key software development concepts
 
 Hello everyone!
 It's Andre speaking.
@@ -8,7 +8,7 @@ It was created during one of my classes, by me and my students.
 I tried to use several eky software concepts on it. Many of them I was able to do the right way... Many of them I did it wrong or
 are incomplete.
 All kind of contribution is welcome. 
-Use this sample to learn, teach, change, critisize, whatever you want.
+Use this sample to learn, teach, change, criticize, whatever you want.
 Just keep in mind that it was an experiment created during a course...
 Of course it would be great if you contribute with ideas and more code.
 There is a lot to do. So many concepts to apply, to improve.
