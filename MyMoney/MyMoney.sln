@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstractions", "Abstraction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Domain.Abstractions", "Domain\Abstractions\MyMoney.Domain.Abstractions.csproj", "{707BFC5D-FF6E-4AF7-AAF8-42EBBDB63F19}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicImplementations", "BasicImplementations", "{1395605E-8BF4-41AA-979D-8285D1847DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Domain.BasicImplementations", "Domain\BasicImplementations\MyMoney.Domain.BasicImplementations.csproj", "{326708CA-CBF3-490B-82AD-26C7380608EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{707BFC5D-FF6E-4AF7-AAF8-42EBBDB63F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{707BFC5D-FF6E-4AF7-AAF8-42EBBDB63F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{707BFC5D-FF6E-4AF7-AAF8-42EBBDB63F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326708CA-CBF3-490B-82AD-26C7380608EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326708CA-CBF3-490B-82AD-26C7380608EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326708CA-CBF3-490B-82AD-26C7380608EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326708CA-CBF3-490B-82AD-26C7380608EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3FD63A54-C17C-437D-A9EB-67B8513EFE30} = {7F6DB1EE-83E0-4F10-B1A4-1A637425FF83}
 		{707BFC5D-FF6E-4AF7-AAF8-42EBBDB63F19} = {3FD63A54-C17C-437D-A9EB-67B8513EFE30}
+		{1395605E-8BF4-41AA-979D-8285D1847DA8} = {7F6DB1EE-83E0-4F10-B1A4-1A637425FF83}
+		{326708CA-CBF3-490B-82AD-26C7380608EF} = {1395605E-8BF4-41AA-979D-8285D1847DA8}
 	EndGlobalSection
 EndGlobal
