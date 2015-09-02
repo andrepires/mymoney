@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a268b8a-c78c-48dd-905a-87d0a94630fe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="a600515c-f8c7-4418-82f9-96c692c7c182" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4aec2c9c-3164-49c4-81d4-0923477a8f49" direction="Forward">
+          <layerMoniker Id="007f7796-a671-4e80-b1e9-245124d269a7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="8283be84-461d-417c-98d2-f71c2a8f7d2c" name="Web API">
+          <references>
+            <reference Id="314a6d41-ab52-4228-88f2-fc0ef5e74b8e" name="MyMoney.Presentation.WebAPI">
+              <ArtifactNode Label="MyMoney.Presentation.WebAPI" Category="CodeSchema_Project" Id="(Assembly=../../../Presentation/WebAPI/MyMoney.Presentation.WebAPI/MyMoney.Presentation.WebAPI.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Presentation.WebAPI)" Label="MyMoney.Presentation.WebAPI.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="aab013b1-5a84-45ae-99d7-671b5eb5339b" name="Data" />
+    <layer Id="007f7796-a671-4e80-b1e9-245124d269a7" name="Domain">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d422e046-4762-4a5a-8082-1f886b1071d7" direction="Forward">
+          <layerMoniker Id="aab013b1-5a84-45ae-99d7-671b5eb5339b" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="0133d26f-cd18-4bd2-9b37-8ea5d4f166f7" name="Application">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="499a3877-80e1-4da3-b6cd-e18eaf8e5bdb" direction="Forward">
+              <layerMoniker Id="6bfaade6-a92c-4cf4-aeb4-58c20480927a" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="f0421848-e767-4aee-9e93-4d0fe6a1394a" direction="Forward">
+              <layerMoniker Id="4c1ddb99-f2e8-4e50-8622-1e80fc6fc08a" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="76662161-b959-41b0-ab14-41b3a8717564" name="MyMoney.Domain.Application">
+              <ArtifactNode Label="MyMoney.Domain.Application" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Application/Anemic.Domain.Application/MyMoney.Domain.Application.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Domain.Application)" Label="MyMoney.Domain.Application.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="e3f876a1-71e0-4c26-a535-e94970fff71b" name="Web Services">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="bbdc9336-6ea8-4a72-93bc-7aeca28037c4" direction="Forward">
+              <layerMoniker Id="6bfaade6-a92c-4cf4-aeb4-58c20480927a" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="59384abc-accb-464e-9c5f-d84eeedcc4d7" direction="Forward">
+              <layerMoniker Id="0133d26f-cd18-4bd2-9b37-8ea5d4f166f7" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="eaf989ee-5e36-471f-8237-a47a8a871d89" direction="Forward">
+              <layerMoniker Id="566dac01-1c8d-4e02-a43c-715ecd217b86" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="e7ef4e5f-8c29-4f14-90c5-e13fbf4a2683" name="MyMoney.Domain.Application.WebServices">
+              <ArtifactNode Label="MyMoney.Domain.Application.WebServices" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Application/WebServices/Anemic.Domain.Application.WebServices/MyMoney.Domain.Application.WebServices.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Domain.Application.WebServices)" Label="MyMoney.Domain.Application.WebServices.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="4c1ddb99-f2e8-4e50-8622-1e80fc6fc08a" name="Infrastructure">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="3e4bb2fe-bd50-4606-ac89-a12a76aba768" direction="Forward">
+              <layerMoniker Id="6bfaade6-a92c-4cf4-aeb4-58c20480927a" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="43a53810-32bc-4629-a016-85ec052dc92e" name="EF">
+              <references>
+                <reference Id="18afe295-1d88-434b-b55f-eca1e8ee1cb3" name="MyMoney.Domain.Infrastructure.EntityFramework">
+                  <ArtifactNode Label="MyMoney.Domain.Infrastructure.EntityFramework" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Infrastructure/EntityFramework/Anemic.Domain.Infrastructure.EntityFramework/MyMoney.Domain.Infrastructure.EntityFramework.csproj)">
+                    <Category Ref="File" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=MyMoney.Domain.Infrastructure.EntityFramework)" Label="MyMoney.Domain.Infrastructure.EntityFramework.dll" Category="CodeSchema_Assembly">
+                    <Category Ref="FileSystem.Category.FileOfType.dll" />
+                    <LinkCategory Ref="Produces" />
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="fb360fd4-3471-4a2c-91d5-63c9b780898d" name="Origo">
+              <references>
+                <reference Id="7aa70d5c-e608-4414-9a47-dae722276180" name="MyMoney.Domain.Infrastructure.OrigoDb">
+                  <ArtifactNode Label="MyMoney.Domain.Infrastructure.OrigoDb" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Infrastructure/OrigoDb/Anemic.Domain.Infrastructure.OrigoDb/MyMoney.Domain.Infrastructure.OrigoDb.csproj)">
+                    <Category Ref="File" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=MyMoney.Domain.Infrastructure.OrigoDb)" Label="MyMoney.Domain.Infrastructure.OrigoDb.dll" Category="CodeSchema_Assembly">
+                    <Category Ref="FileSystem.Category.FileOfType.dll" />
+                    <LinkCategory Ref="Produces" />
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="2beb9ca6-d819-4638-9d26-2ac2a7853ca4" name="MyMoney.Domain.Infrastructure">
+              <ArtifactNode Label="MyMoney.Domain.Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Infrastructure/Anemic.Domain.Infrastructure/MyMoney.Domain.Infrastructure.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Domain.Infrastructure)" Label="MyMoney.Domain.Infrastructure.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="566dac01-1c8d-4e02-a43c-715ecd217b86" name="Configuration">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="b9fb4553-1e0a-4a83-87a0-02f08a490ef5" direction="Forward">
+              <layerMoniker Id="0133d26f-cd18-4bd2-9b37-8ea5d4f166f7" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="2c2fd724-cda8-4c9d-a0e7-9561f820633e" direction="Forward">
+              <layerMoniker Id="4c1ddb99-f2e8-4e50-8622-1e80fc6fc08a" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="06f7b1ed-8712-4299-96fd-e559f1cf62e6" direction="Forward">
+              <layerMoniker Id="6bfaade6-a92c-4cf4-aeb4-58c20480927a" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="e7df2c64-b41e-4f88-b848-10471015e8d4" name="Anemic.Domain.Configuration">
+              <ArtifactNode Label="Anemic.Domain.Configuration" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Configuration/Anemic.Domain.Configuration/Anemic.Domain.Configuration.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Anemic.Domain.Configuration)" Label="Anemic.Domain.Configuration.dll" Category="CodeSchema_Assembly">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="6bfaade6-a92c-4cf4-aeb4-58c20480927a" name="Abstractions and Basic Implementations">
+          <references>
+            <reference Id="669baf06-f9eb-4c90-b662-0678d7366729" name="MyMoney.Domain.Abstractions">
+              <ArtifactNode Label="MyMoney.Domain.Abstractions" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/Abstractions/Anemic.Domain.Abstractions/MyMoney.Domain.Abstractions.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Domain.Abstractions)" Label="MyMoney.Domain.Abstractions.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+            <reference Id="8caf98ff-b3f3-4a3e-9202-70eedf09bf2a" name="MyMoneyDomain.BasicImplementations">
+              <ArtifactNode Label="MyMoneyDomain.BasicImplementations" Category="CodeSchema_Project" Id="(Assembly=../../../Domain/BasicImplementations/Anemic.Domain.BasicImplementations/MyMoneyDomain.BasicImplementations.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=MyMoney.Domain.BasicImplementations)" Label="MyMoney.Domain.BasicImplementations.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

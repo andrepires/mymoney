@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1655dd09-fba2-4aee-8f28-68e4349a76df}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>MyMoney.Documentation.Architecture</Name>
+    <RootNamespace>Anemic.Documentation.Architecture</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Anemic.Documentation.Architecture.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\Abstractions\Anemic.Domain.Abstractions\MyMoney.Domain.Abstractions.csproj">
+      <Name>MyMoney.Domain.Abstractions</Name>
+      <Project>{707bfc5d-ff6e-4af7-aaf8-42ebbdb63f19}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Application\Anemic.Domain.Application\MyMoney.Domain.Application.csproj">
+      <Name>MyMoney.Domain.Application</Name>
+      <Project>{a4f46af5-b281-4173-a6db-112787d4d7ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Application\WebServices\Anemic.Domain.Application.WebServices\MyMoney.Domain.Application.WebServices.csproj">
+      <Name>MyMoney.Domain.Application.WebServices</Name>
+      <Project>{9343b29f-3853-460f-8ec7-a17f30522479}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\BasicImplementations\Anemic.Domain.BasicImplementations\MyMoney.Domain.BasicImplementations.csproj">
+      <Name>MyMoney.Domain.BasicImplementations</Name>
+      <Project>{326708ca-cbf3-490b-82ad-26c7380608ef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Configuration\Anemic.Domain.Configuration\MyMoney.Domain.Configuration.csproj">
+      <Name>MyMoney.Domain.Configuration</Name>
+      <Project>{e0a4dbef-0e3a-4809-8c25-700f71fddb4f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Infrastructure\Anemic.Domain.Infrastructure\MyMoney.Domain.Infrastructure.csproj">
+      <Name>MyMoney.Domain.Infrastructure</Name>
+      <Project>{5d42d972-e58f-4824-abfc-f68842b2de45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Infrastructure\EntityFramework\Anemic.Domain.Infrastructure.EntityFramework\MyMoney.Domain.Infrastructure.EntityFramework.csproj">
+      <Name>MyMoney.Domain.Infrastructure.EntityFramework</Name>
+      <Project>{f59dc889-3f9d-4c90-8a51-3c38c7e8f2a8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Domain\Infrastructure\OrigoDb\Anemic.Domain.Infrastructure.OrigoDb\MyMoney.Domain.Infrastructure.OrigoDb.csproj">
+      <Name>MyMoney.Domain.Infrastructure.OrigoDb</Name>
+      <Project>{64121ee0-905c-4ea5-8c67-564cc81b42fd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Presentation\WebAPI\MyMoney.Presentation.WebAPI\MyMoney.Presentation.WebAPI.csproj">
+      <Name>MyMoney.Presentation.WebAPI</Name>
+      <Project>{7aa739cb-fed9-4dcc-a3e0-f532ce69f71a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
