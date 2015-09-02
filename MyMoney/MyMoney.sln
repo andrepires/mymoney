@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrigoDb", "OrigoDb", "{9703
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Domain.Infrastructure.OrigoDb", "Domain\Infrastructure\OrigoDb\MyMoney.Domain.Infrastructure.OrigoDb.csproj", "{022B8DE1-774E-400D-95AC-ACEDEDB5B758}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{FE11BBBE-EDF4-4235-903A-96FCC34FCE65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Domain.Application", "Domain\Application\MyMoney.Domain.Application.csproj", "{A4F46AF5-B281-4173-A6DB-112787D4D7CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{022B8DE1-774E-400D-95AC-ACEDEDB5B758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{022B8DE1-774E-400D-95AC-ACEDEDB5B758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022B8DE1-774E-400D-95AC-ACEDEDB5B758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F46AF5-B281-4173-A6DB-112787D4D7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F46AF5-B281-4173-A6DB-112787D4D7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F46AF5-B281-4173-A6DB-112787D4D7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F46AF5-B281-4173-A6DB-112787D4D7CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,5 +71,7 @@ Global
 		{9CB8BBCA-8524-4EB9-896E-BAA1A5C25867} = {87616605-D520-4B04-B88C-58D5D2091774}
 		{9703539B-C930-43FB-86AF-FAF996CF4CD6} = {951720D9-E1C1-4E20-9A73-C4E23F4C3AAF}
 		{022B8DE1-774E-400D-95AC-ACEDEDB5B758} = {9703539B-C930-43FB-86AF-FAF996CF4CD6}
+		{FE11BBBE-EDF4-4235-903A-96FCC34FCE65} = {7F6DB1EE-83E0-4F10-B1A4-1A637425FF83}
+		{A4F46AF5-B281-4173-A6DB-112787D4D7CE} = {FE11BBBE-EDF4-4235-903A-96FCC34FCE65}
 	EndGlobalSection
 EndGlobal
