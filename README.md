@@ -1,5 +1,5 @@
 # mymoney
-Sample SPA Application using AngularJS and many key software development concepts
+My Money Sample SPA Application using AngularJS, OrigoDB, EF and many key software development concepts
 
 Hello everyone!
 It's Andre speaking.
