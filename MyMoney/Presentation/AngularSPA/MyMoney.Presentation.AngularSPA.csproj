@@ -147,6 +147,13 @@
     <Content Include="scripts\ui-bootstrap-tpls-0.10.0.js" />
     <Content Include="scripts\ui-bootstrap-tpls-0.10.0.min.js" />
     <Content Include="scripts\uuid.js" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css.map" />

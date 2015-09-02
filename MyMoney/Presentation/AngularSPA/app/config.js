@@ -36,9 +36,11 @@
         del: 46
     };
 
-    //var remoteServiceName = 'http://localhost:3270';
+    //TODO: Setup your application port here
+    var remoteServiceName = 'http://localhost:4864';
 
-    var remoteServiceName = 'https://microsoft-apiappb838c42666d343b29debe9b264b8ef72.azurewebsites.net';
+    //var remoteServiceName = 'https://microsoft-apiappb838c42666d343b29debe9b264b8ef72.azurewebsites.net';
+
     //Application events
     var events = {
         controllerActivateSuccess: 'controller.activateSuccess',
