@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Configuration", "Configuration\MyMoney.Configuration.csproj", "{A6BF2FA5-779A-4F8A-8872-38215822809A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMoney.Presentation.AngularSPA", "Presentation\AngularSPA\MyMoney.Presentation.AngularSPA.csproj", "{42312DD4-C0D1-4287-AD91-203A5FABBEA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{A6BF2FA5-779A-4F8A-8872-38215822809A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BF2FA5-779A-4F8A-8872-38215822809A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BF2FA5-779A-4F8A-8872-38215822809A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42312DD4-C0D1-4287-AD91-203A5FABBEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42312DD4-C0D1-4287-AD91-203A5FABBEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42312DD4-C0D1-4287-AD91-203A5FABBEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42312DD4-C0D1-4287-AD91-203A5FABBEA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,5 +95,6 @@ Global
 		{A4F46AF5-B281-4173-A6DB-112787D4D7CE} = {FE11BBBE-EDF4-4235-903A-96FCC34FCE65}
 		{76F7DEB3-2FF8-4244-A93C-B4FCACAF631A} = {FE11BBBE-EDF4-4235-903A-96FCC34FCE65}
 		{A6BF2FA5-779A-4F8A-8872-38215822809A} = {4A6BCE92-3D86-49EA-9C62-BE59CC2A83DD}
+		{42312DD4-C0D1-4287-AD91-203A5FABBEA1} = {9BCF3309-1090-4F97-82D6-2A4EE5E28268}
 	EndGlobalSection
 EndGlobal

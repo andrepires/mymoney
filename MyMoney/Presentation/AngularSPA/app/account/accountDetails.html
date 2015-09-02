@@ -1,0 +1,130 @@
+﻿<section id="accountDetails-view" class="mainbar" data-ng-controller="accountDetailsController as vm">
+    <section class="matter">
+        <div class="container">
+            <div>
+                <button class="btn btn-info btn-form-md"
+                        data-ng-click="vm.goBack()">
+                    <i class="fa fa-hand-o-left"></i>Back
+                </button>
+                <button class="btn btn-info btn-form-md"
+                        data-ng-click="vm.cancel()" data-ng-disabled="!vm.canSave">
+                    <i class="fa fa-undo"></i>Cancel
+                </button>
+                <button class="btn btn-info btn-form-md"
+                        data-ng-click="vm.save()" data-ng-disabled="!vm.canSave">
+                    <i class="fa fa-save"></i>Save
+                </button>
+
+                <!--Need ng-hide for show/hide animations-->
+                <span data-ng-show="vm.hasChanges" class="dissolve-animation ng-hide flag-haschanges">
+                    <i class="fa fa-asterisk fa fa-asterisk-large" rel="tooltip" title="You have changes"></i>
+                </span>
+            </div>
+            <div class="widget wgreen">
+                <div data-cc-widget-header title="Edit {{vm.account.Name || 'New Account'}}"></div>
+                <div class="widget-content user">
+                    <div class="form-group">
+                        <label class="control-label">Oid</label>
+                        <div>
+                            <input class="form-control"
+                                   data-ng-model="vm.account.Oid"
+                                   data-z-validate
+                                   data-ng-hide="vm.editMode"
+                                   readonly />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <div>
+                            <input class="form-control"
+                                   data-ng-model="vm.account.Name"
+                                   data-z-validate
+                                   placeholder="Account Name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Description</label>
+                        <div>
+                            <input class="form-control"
+                                   data-ng-model="vm.account.Description"
+                                   data-z-validate
+                                   placeholder="Brief Description" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Type</label>
+                        <div>
+                            <input class="form-control"
+                                   data-ng-model="vm.account.AccountType"
+                                   data-z-validate
+                                   placeholder="Account Type" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Value</label>
+                        <div>
+                            <input class="form-control"
+                                   data-ng-model="vm.account.Value"
+                                   data-z-validate
+                                   placeholder="Account Value" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Due Date</label>
+                        <div>
+                            <!--<input id="datepicker"
+                                       class="form-control"
+                                       type="text"
+                                       data-datepicker-popup
+                                       data-ng-options="vm.datePickerOptions"
+                                       data-ng-model="vm.account.DueDate">-->
+
+                            <!--<input type="text" class="form-control"
+                                       datepicker-popup
+                                       is-open="vm.status.opened"
+                                       min-date="01/01/1900"
+                                       max-date="01/01/2100"
+                                       datepicker-options="dateOptions"
+
+                                       ng-model="vm.account.DueDate"/>-->
+                            <input type="text"
+                                   class="form-control ng-valid ng-isolate-scope ng-valid-required ng-touched ng-dirty"
+                                   datepicker-popup
+                                   ng-model="vm.account.FormattedDueDate"
+                                   mm-date="dd-MM-yyyy"
+                                   datepicker-options="dateOptions"
+                                   ng-required="true"
+                                   close-text="Close" 
+                                   required="required">
+                                    
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Payment Date</label>
+                        <div>
+                            <input type="text"
+                                   class="form-control ng-valid ng-isolate-scope ng-valid-required ng-touched ng-dirty"
+                                   datepicker-popup
+                                   ng-model="vm.account.FormattedPaymentDate"
+                                   mm-date="dd-MM-yyyy"
+                                   datepicker-options="dateOptions"
+                                   ng-required="true"
+                                   close-text="Close"
+                                   required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Is Past Due</label>
+                        <div>
+                            <input type="text" readonly class="form-control"
+                                   data-ng-model="vm.account.isPastDue" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
