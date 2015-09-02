@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1655dd09-fba2-4aee-8f28-68e4349a76df}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>MyMoney.Documentation.Architecture</Name>
+    <RootNamespace>Anemic.Documentation.Architecture</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Anemic.Documentation.Architecture.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Configuration\MyMoney.Configuration.csproj">
+      <Name>MyMoney.Configuration</Name>
+      <Project>{a6bf2fa5-779a-4f8a-8872-38215822809a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\Abstractions\MyMoney.Domain.Abstractions.csproj">
+      <Name>MyMoney.Domain.Abstractions</Name>
+      <Project>{707bfc5d-ff6e-4af7-aaf8-42ebbdb63f19}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\Application.WebServices\MyMoney.Domain.Application.WebServices.csproj">
+      <Name>MyMoney.Domain.Application.WebServices</Name>
+      <Project>{76f7deb3-2ff8-4244-a93c-b4fcacaf631a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\Application\MyMoney.Domain.Application.csproj">
+      <Name>MyMoney.Domain.Application</Name>
+      <Project>{a4f46af5-b281-4173-a6db-112787d4d7ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\BasicImplementations\MyMoney.Domain.BasicImplementations.csproj">
+      <Name>MyMoney.Domain.BasicImplementations</Name>
+      <Project>{326708ca-cbf3-490b-82ad-26c7380608ef}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\Infrastructure\EntityFramework\MyMoney.Domain.Infrastructure.EntityFramework.csproj">
+      <Name>MyMoney.Domain.Infrastructure.EntityFramework</Name>
+      <Project>{9cb8bbca-8524-4eb9-896e-baa1a5c25867}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\Infrastructure\OrigoDb\MyMoney.Domain.Infrastructure.OrigoDb.csproj">
+      <Name>MyMoney.Domain.Infrastructure.OrigoDb</Name>
+      <Project>{022b8de1-774e-400d-95ac-acededb5b758}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\AngularSPA\MyMoney.Presentation.AngularSPA.csproj">
+      <Name>MyMoney.Presentation.AngularSPA</Name>
+      <Project>{42312dd4-c0d1-4287-ad91-203a5fabbea1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
