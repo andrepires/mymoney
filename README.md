@@ -15,7 +15,7 @@ There is a lot to do. So many concepts to apply, to improve.
 Maybe you can find the ones I did right, the ones I did wrong.
 I think the following items are the most important things to do:
 
-- Improve/Change the specflow scenarios by implementing the tests the wring way, mocking the objetcs that are not under test.
+- Improve/Change the specflow scenarios by implementing the tests the right way, mocking the objetcs that are not under test.
 The way it is implemented is wrong and the tests will fail due to the wrong reasons. Let's MOCK IT!
 If you are an student, it may be a very interesting challenge for you.
 - Create more tests, more scenarios, more features.
