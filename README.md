@@ -10,9 +10,9 @@ are incomplete.
 All kind of contribution is welcome. 
 Use this sample to learn, teach, change, criticize, whatever you will.
 Just keep in mind that it was an experiment created during a course...
-Of course it would be great if you contribute with ideas and more code.
+Of course it would be great if you contributed with ideas and more code.
 There is a lot to do. So many concepts to apply, to improve.
-Maybe you can find the ones I did it right, the ones I did it wrong.
+Maybe you can find the ones I did right, the ones I did wrong.
 I think the following are the most important things to do:
 
 - Improve/Change the specflow scenarios by implementing the tests the wring way, mocking the objetcs that are not under test.
