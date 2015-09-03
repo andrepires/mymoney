@@ -8,7 +8,7 @@ It was created during one of my classes, by me and my students.
 I tried to use several key software concepts on it. Many of them I was able to do the right way... Many of them I did wrong or
 are incomplete.
 All kind of contribution is welcome. 
-Use this sample to learn, teach, change, criticize, whatever you want.
+Use this sample to learn, teach, change, criticize, whatever you will.
 Just keep in mind that it was an experiment created during a course...
 Of course it would be great if you contribute with ideas and more code.
 There is a lot to do. So many concepts to apply, to improve.
