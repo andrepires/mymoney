@@ -5,7 +5,7 @@ Hello everyone!
 It's Andre speaking.
 This sample project is all about learning...
 It was created during one of my classes, by me and my students.
-I tried to use several eky software concepts on it. Many of them I was able to do the right way... Many of them I did it wrong or
+I tried to use several key software concepts on it. Many of them I was able to do the right way... Many of them I did it wrong or
 are incomplete.
 All kind of contribution is welcome. 
 Use this sample to learn, teach, change, criticize, whatever you want.
