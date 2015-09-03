@@ -5,8 +5,7 @@ Hello everyone!
 It's Andre speaking.
 This sample project is all about learning...
 It was created during one of my classes, by me and my students.
-I tried to use several key software concepts on it. Many of them I was able to do the right way... Many of them I did wrong or
-are incomplete.
+I tried to use several key software concepts on it. Many of them, I was able to do the right way... Many of them, I did wrong or are incomplete.
 All kind of contribution is welcome. 
 Use this sample to learn, teach, change, criticize, whatever you will.
 Just keep in mind that it was an experiment created during a course...
@@ -24,8 +23,9 @@ If you are an student, it may be a very interesting challenge for you.
 - Improve the layout and styles. Apply themes, etc.
 - Improve/create more features for the administration area
 
-These are the ones I figured out by now. Please contribute with more ideas...
+These are the ones I figured out by now. Please, contribute with more ideas...
 
 Best regards,
+
 André Pires
 
