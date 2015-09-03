@@ -12,7 +12,7 @@ Use this sample to learn, teach, change, criticize, whatever you want.
 Just keep in mind that it was an experiment created during a course...
 Of course it would be great if you contribute with ideas and more code.
 There is a lot to do. So many concepts to apply, to improve.
-Maybe you can find the ones I could do better, the ones I did wrong.
+Maybe you can find the ones I did it right, the ones I did it wrong.
 I think the following are the most important things to do:
 
 - Improve/Change the specflow scenarios by implementing the tests the wring way, mocking the objetcs that are not under test.
