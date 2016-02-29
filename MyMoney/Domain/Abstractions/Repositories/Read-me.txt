@@ -1,0 +1,1 @@
+﻿Create your domain's Abstract Repositories in this folder.

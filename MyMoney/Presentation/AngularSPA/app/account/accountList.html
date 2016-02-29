@@ -1,0 +1,66 @@
+﻿<section class="mainbar" data-ng-controller="accountController as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <input class="input-xlarge search-query"
+                           data-ng-model="vm.accountSearch"
+                           data-ng-keyup="vm.search($event)"
+                           placeholder="Live search...">
+                </div>
+                <div class="col-sm-8">
+                    <div class="btn-group pull-right">
+                        <a class="btn btn-info btn-form-md"
+                           data-ng-click="vm.refresh()"><i class="fa fa-refresh"></i><span>Refresh</span></a>
+                        <a class="btn btn-info btn-form-md"
+                           data-ng-click="vm.createAccount()"><i class="fa fa-plus"></i><span>Add Account</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="widget wdark">
+                    <div data-cc-widget-header 
+                         title="{{vm.title}}"
+                         subtitle="{{vm.accountFilteredCount}} / {{vm.accountCount}}"
+                         right-text="Page {{vm.paging.currentPage}} of {{vm.paging.pageCount}}"></div>
+                    <div class="widget-content user">
+                        <h3>List of Accounts</h3>
+                        <table class="table table-condensed table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>DueDate</th>
+                                <th>Value</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr data-ng-repeat="account in vm.accounts track by account.Oid" data-ng-click="vm.goToAccount(account)">
+                                <td>{{account.Name}}</td>
+                                <td>{{account.FormattedDueDate | date:"dd/MM/yyyy"}}</td>
+                                <td>{{account.Value | currency:"R$"}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                        <pagination boundary-links="true"
+                                    on-select-page="vm.pageChanged(page)"
+                                    total-items="vm.accountFilteredCount"
+                                    items-per-page="vm.paging.pageSize"
+                                    page="vm.paging.currentPage"
+                                    max-size="vm.paging.maxPagesToShow"
+                                    class="pagination-sm"
+                                    previous-text="Previous"
+                                    nex-text="Next"
+                                    first-text="First"
+                                    last-text="Last"></pagination>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
