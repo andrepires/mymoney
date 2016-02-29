@@ -33,8 +33,8 @@ namespace MyMoney.Documentation.Requirements
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Admin Controller", "In order to perform application configuration\nAs a client of the Web Api\nI want t" +
-                    "o be able to get and set configuration values from the web service", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Admin Controller", "In order to perform application configuration\r\nAs a client of the Web Api\r\nI want" +
+                    " to be able to get and set configuration values from the web service", ProgrammingLanguage.CSharp, new string[] {
                         "SelfHostDefault"});
             testRunner.OnFeatureStart(featureInfo);
         }
